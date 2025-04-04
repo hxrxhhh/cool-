@@ -1,0 +1,51 @@
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url('https://i.imgur.com/dZLDBhZ.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: brightness(0.5);
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #111;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f8f8f8;
+}
+p, blockquote {
+  font-size: 1.1rem;
+}
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #888;
+  font-style: italic;
+  color: #ccc;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+}
+.nav-links a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
