@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You’ll Love This</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e1e1e, #121212);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: typing 3s steps(20), blink 0.7s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    #btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ff0055;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #btn:hover {
+      background: #ff3377;
+    }
+
+    #message {
+      display: none;
+      font-size: 2em;
+      margin-top: 30px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey there, curious mind...</h1>
+  <button id="btn">Click Me</button>
+  <div id="message">You're Awesome. Never Forget That!</div>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      const msg = document.getElementById("message");
+      msg.style.display = "block";
+      msg.animate([
+        { transform: 'scale(0.5)', opacity: 0 },
+        { transform: 'scale(1.2)', opacity: 1 },
+        { transform: 'scale(1)', opacity: 1 }
+      ], {
+        duration: 1000,
+        easing: 'ease-out'
+      });
+    });
+  </script>
+</body>
+</html>
